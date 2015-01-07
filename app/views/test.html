@@ -3,7 +3,7 @@
 <p>From: <input type="text" ng-model="data.selectedTo" typeahead-editable="false" typeahead="airport.name for airport in data.airports | filter:$viewValue | limitTo:8" class="form-control" typeahead-on-select="calcNauticalDist($item, $model, 'selectedTo')"></p>
 
 <p>To: <input type="text" ng-model="data.selectedFrom" typeahead-editable="false" typeahead="airport.name for airport in data.airports | filter:$viewValue | limitTo:8" class="form-control" typeahead-on-select="calcNauticalDist($item, $model, 'selectedFrom')"></p>
-To 
+
 <p>Nautical distance: {{data.nauticalDist}} </p>
 
 <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable='true'>
